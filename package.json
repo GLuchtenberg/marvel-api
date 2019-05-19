@@ -1,0 +1,25 @@
+{
+  "name": "marvel-api",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@types/styled-components": "^4.1.5",
+    "typescript": "^3.2.2",
+    "concurrently": "^4.1.0"
+  },
+  "scripts": {
+    "dev:web": "yarn workspace @marvel/web start",
+    "dev:app": "yarn workspace @marvel/app start"
+  }
+}
