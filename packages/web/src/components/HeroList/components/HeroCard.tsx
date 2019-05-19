@@ -36,14 +36,13 @@ const HeroCard = ({ hero, classes }: Props) => {
     function handleClose() {
       setOpen(false);
     }
-
     return (
       <Card className={classes.card}>
-        <CardActionArea onClick={handleClick}>
+        <CardActionArea onClick={handleClick} data-testid="action-area">
           <CardMedia
             className={classes.media}
             image={`${hero.thumbnail.path}.${hero.thumbnail.extension}`}
-            title="Contemplative Reptile"
+            title={hero.name}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">{hero.name}</Typography>
@@ -52,7 +51,7 @@ const HeroCard = ({ hero, classes }: Props) => {
         <CardActions onClick={handleClick}>
           <Button size="small" color="primary">Details</Button>
         </CardActions>
-        <HeroModal open={open} onClose={handleClose} hero={hero} />
+        <HeroModal open={open} onClose={handleClose} hero={hero} data-testid="hero-modal" />
       </Card>
     );
 };

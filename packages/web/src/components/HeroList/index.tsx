@@ -1,5 +1,5 @@
 import React from 'react';
-import { Paper, Grid, withStyles } from '@material-ui/core';
+import { Grid, withStyles } from '@material-ui/core';
 import { Hero } from '../../store/ducks/heros/types';
 import HeroCard from './components/HeroCard';
 
@@ -11,7 +11,6 @@ const styles = {
     root: {
       flexGrow: 1,
     },
-
   };
 
 const HeroList = ({ heros, classes }:Props) => (

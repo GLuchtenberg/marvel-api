@@ -12,13 +12,14 @@ interface Props {
 
 
 const HeroModal = ({
- open, hero, onClose: handleClose,
+ open, hero, onClose: handleClose, ...otherProps
 } : Props) => (
   <Modal
     aria-labelledby="simple-modal-title"
     aria-describedby="simple-modal-description"
     open={open}
     onClose={handleClose}
+    {...otherProps}
   >
     <Paper>
       <Grid container spacing={16}>

@@ -33,7 +33,8 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-member-accessibility": "off",
     "linebreak-style": 0,
-    "no-use-before-define": "off"
+    "no-use-before-define": "off",
+    "import/no-extraneous-dependencies": "off"
   },
   settings: {
     "import/parsers": {

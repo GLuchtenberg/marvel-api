@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Reducer } from 'redux';
-import uniqBy from 'lodash/uniqBy';
 import { HerosState, HeroTypes, Hero } from './types';
 import { Page } from '../../../services/marvel/types';
 
